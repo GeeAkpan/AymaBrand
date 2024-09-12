@@ -1,0 +1,9 @@
+@import url("./about.css");
+@import url("./blog.css");
+@import url("./design.css");
+@import url("./hero.css");
+
+/* 
+This Stylesheet contains rules for elements that are 
+recurrent throughout the index page.
+*/

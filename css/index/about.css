@@ -1,0 +1,89 @@
+/* About Us */
+
+/* 
+This Stylesheet contains rules for elements of the
+about section in the index page
+*/
+
+.about-us{
+    background: #f9f9f9;
+
+    background-image: url("assets/images/ayma/image02.jpg");
+    /* padding: 4.5rem 0; */
+    display: flex;
+    align-items: top;
+    justify-content: top;
+
+    min-height: 45rem;
+    background-position: 50% 35%;
+    background-size: cover;
+}
+.about-us .container{
+    background: #0000002c;
+    /* margin: auto; */
+    width: 99dvw !important;
+    max-width: none;
+    height: inherit;
+     display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-us .about-img{
+    width: 50% !important;
+    height: 50% !important;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 2rem; /* Adds spacing between the image and text */
+    padding: 2rem; /* Adds padding around the content */
+}
+
+/* About Paragraph */
+.about-text {
+    flex: 1; /* Text takes up available space */
+    max-width: 60%;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: auto;
+    text-align: center;
+}
+
+/* About Image */
+.about-content img {
+    flex: 1; /* Image takes up available space */
+    max-width: 45%; /* Image is limited to 45% of the container width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 8px; /* Optional: Rounded corners for a nice visual */
+}
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .about-us{
+        min-height: 45rem;
+        background-position: 50% 20%;
+        background-size: cover;
+    }
+
+    .about-text {
+        max-width: 90%;
+        font-size: 1rem;
+
+    }
+}
+
+@media screen and (min-width: 540px) {
+
+}

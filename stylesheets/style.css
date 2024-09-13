@@ -11,6 +11,7 @@ recurrent throughout all the pages of the website
     --Roboto: 'Roboto', sans-serif;
     --dark: #a14c3e;
     --exDark: #EA9588;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -31,6 +32,11 @@ img {
     display: block;
 }
 
+a {
+    text-decoration: none;
+    color: #fff
+}
+
 .container {
     max-width: 1320px;
     margin: 0 auto;
@@ -40,7 +46,7 @@ img {
 /* Header */
 header {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/images/others/image06.png) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/others/image06.png) center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -183,17 +189,17 @@ footer {
     color: var(--exDark);
 }
 
-.footer span {
+.footer span a {
     margin-top: 1rem;
+    text-decoration: none !important;
+    color: #fff !important;
     display: block;
     font-family: var(--Playfair);
     letter-spacing: 2px;
 }
 
 /* Media Queries */
-@media screen and (min-width: 1024px) {
-    
-}
+@media screen and (min-width: 1024px) {}
 
 @media screen and (min-width: 768px) {
     .navbar .container {
@@ -201,6 +207,7 @@ footer {
         align-items: center;
         justify-content: space-between;
     }
+    
 }
 
 @media screen and (min-width: 540px) {

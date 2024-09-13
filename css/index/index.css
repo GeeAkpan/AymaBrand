@@ -1,0 +1,31 @@
+@import url("./about.css");
+@import url("./blog.css");
+@import url("./design.css");
+@import url("./hero.css");
+
+/* 
+This Stylesheet contains rules for elements that are 
+recurrent throughout the index page.
+*/
+
+body{
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-snap-align: start;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}

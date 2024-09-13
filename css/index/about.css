@@ -1,0 +1,159 @@
+/* About Us */
+
+/* 
+This Stylesheet contains rules for elements of the
+about section in the index page
+*/
+
+.about-us {
+    background: #f9f9f9;
+
+    background-image: url("/assets/images/ayma/image02.jpg");
+
+    display: flex;
+    align-items: top;
+    justify-content: top;
+
+    min-height: 105dvh;
+    background-position: 50% 35%;
+    background-size: cover;
+}
+
+.about-us .title {
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+}
+
+.about-us .about-text {
+    padding-top: 0;
+}
+
+.about-us .container {
+    background: #0000002c;
+    /* margin: auto; */
+    width: 99dvw !important;
+    max-width: none;
+    height: inherit;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-us .about-img {
+    width: 50% !important;
+    height: 50% !important;
+}
+
+
+
+
+
+
+
+.about {
+    background: #242726;
+    padding: auto 3rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content>div.featured-image-container {
+    width: 40%;
+
+}
+
+.about-content img {
+    min-width: 25rem;
+}
+
+/* About Paragraph */
+.about-text {
+    flex: 1;
+    /* Text takes up available space */
+
+    max-width: 60%;
+    min-width: 20rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* About Image */
+.about-content img {
+    /* flex: 1; */
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .about-us {
+        min-height: 99dvh;
+    }
+
+    .about-text {
+        max-width: 70%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 882px) {
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .about-content .about-text {
+        text-align: center;
+        max-width: 95dvw;
+        text-align: center;
+    }
+
+    .about-us {
+        min-height: 45rem;
+        background-position: 50% 25%;
+        background-size: cover;
+        background-size: 200%;
+    }
+
+    .about-text {
+        max-width: 95%;
+        font-size: 1rem;
+
+    }
+    .about-content>div.featured-image-container {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .about-us {
+        min-height: 45rem;
+        background-position: 50% 25%;
+        background-size: cover;
+        background-size: 200%;
+    }
+
+    .about-text {
+        max-width: 95%;
+        font-size: 1rem;
+        text-align: center;
+    }
+}

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+/* 
+This Stylesheet contains rules for elements that are 
+recurrent throughout all the pages of the website 
+*/
+
 :root {
     --Playfair: 'Playfair Display', serif;
     --Quicksand: 'Quicksand', sans-serif;
@@ -12,6 +17,7 @@
     padding: 0;
     margin: 0;
     font-family: var(--Quicksand);
+    transition: ease-in-out 0.5s;
 }
 
 body {
@@ -34,7 +40,7 @@ img {
 /* Header */
 header {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/Jpegs/Image\ 5.png) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/images/others/image06.png) center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -139,210 +145,10 @@ header {
 }
 
 
-/* Design Section */
-.design {
-    padding: 4.5rem 0;
-}
-
-.title {
-    text-align: center;
-    padding: 1rem 0;
-}
-
-.title h2 {
-    font-family: var(--Playfair);
-    font-size: 2.4rem;
-}
-
-.title p {
-    text-transform: uppercase;
-    padding: 0.6rem 0;
-}
-
-.design-content {
-    margin: 2rem 0;
-}
-
-.design-item {
-    cursor: pointer;
-    margin: 1.5rem 0;
-}
-
-.design-item span{
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.design-img {
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-
-}
-
-.design-img::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.design-img img {
-    transition: all 0.5s ease;
-    max-width: auto;
-    height: auto;
-}
-
-.design-item:hover img {
-    transform: scale(1.2);
-}
-
-.design-img span:first-of-type {
-    position: absolute;
-    z-index: 1;
-    top: 10px;
-    left: 10px;
-    background: var(--exDark);
-    color: #fff;
-    padding: 0.25rem 1rem;
-}
-
-.design-img span:last-of-type {
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    right: 10px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.1rem;
-}
-
-.design-title {
-    padding: 1rem;
-    font-size: 1.2rem;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.design-title a {
-    color: var(--dark);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-family: var(--Playfair);
-}
 
 
 
 
-/* About Us */
-
-.about-us{
-    background: #f9f9f9;
-    padding: 4.5rem 0;
-    display: block;
-}
-
-.about-us .about-img{
-    width: 50% !important;
-    height: 50% !important;
-}
-
-
-/* Blog Section */
-.blog {
-    background: #f9f9f9;
-    padding: 4.5rem 0;
-}
-
-.blog-content {
-    margin: 2rem 0;
-}
-
-.blog-img {
-    position: relative;
-}
-
-.blog-img span {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: var(--exDark);
-    color: #fff;
-    font-size: 1.4rem;
-    padding: 0.3rem 0.6rem;
-}
-
-.blog-text {
-    margin: 2.2rem 0;
-    padding: 0 1rem;
-}
-
-.blog-text span {
-    font-weight: 300;
-    display: block;
-    padding-bottom: 0.5rem;
-}
-
-.blog-text h2 {
-    font-family: var(--Playfair);
-    padding: 1rem 0;
-    font-size: 1.65rem;
-    font-weight: 500;
-}
-
-.blog-text p {
-    font-weight: 300;
-    font-size: 1.1rem;
-    opacity: 0.9;
-    padding-bottom: 1.2rem;
-}
-
-.blog-text a {
-    font-family: var(--Roboto);
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: var(--dark);
-    display: inline-block;
-    background: var(--dark);
-    color: #fff;
-    padding: 0.55rem 1.2rem;
-    transition: all 0.5s ease;
-}
-
-.blog-text a:hover {
-    background: var(--exDark);
-}
-
-
-/* About Section */
-.about-content {
-    display: flex;
-    align-items: center;  
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-    gap: 2rem; /* Adds spacing between the image and text */
-    padding: 2rem; /* Adds padding around the content */
-}
-
-/* About Paragraph */
-.about-text {
-    flex: 1; /* Text takes up available space */
-    max-width: 50%; /* Limits the text to 50% of the container width */
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* About Image */
-.about-content img {
-    flex: 1; /* Image takes up available space */
-    max-width: 45%; /* Image is limited to 45% of the container width */
-    height: auto; /* Maintains the aspect ratio of the image */
-    border-radius: 8px; /* Optional: Rounded corners for a nice visual */
-}
 /* Footer */
 footer {
     background: var(--exDark);
@@ -385,6 +191,18 @@ footer {
 }
 
 /* Media Queries */
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 @media screen and (min-width: 540px) {
     .navbar-nav a {
         padding-right: 1.2rem;
@@ -400,59 +218,5 @@ footer {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .navbar .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .search-input {
-        padding: 0.8rem 0;
-    }
-
-    .design-content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    .design-item {
-        margin: 0;
-    }
-
-    .blog-content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    .blog-text {
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .blog-content {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-
-    .blog-text {
-        padding: 0 1.4rem;
-    }
-
-    .about-text {
-        width: 60%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .design-content {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
     }
 }

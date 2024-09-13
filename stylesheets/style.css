@@ -197,7 +197,9 @@ footer {
     font-family: var(--Playfair);
     letter-spacing: 2px;
 }
-
+.menu-icon{
+    display: none;
+}
 /* Media Queries */
 @media screen and (min-width: 1024px) {
     .navbar .container{

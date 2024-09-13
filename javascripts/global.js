@@ -1,6 +1,7 @@
 import {
     globalConfig
 } from "../config/global.config.js"
+let menu = document.querySelector("#menu-icon");
 export function elementPopulator(className, content) {
     const element = document.querySelector(className)
     element.innerText = content
@@ -39,5 +40,12 @@ function populateCopyright() {
         console.error(error)
     }
 }
+
+menu.onclick = () => {
+    navbar.classList.toggle("active");
+  };
+  window.onscroll = () => {
+    navbar.classList.remove("active");
+  };
 
 populateCopyright()

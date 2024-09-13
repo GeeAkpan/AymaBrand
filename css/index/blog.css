@@ -70,15 +70,9 @@ blog section in the index page
 
 
 /* Media Queries */
-@media screen and (min-width: 1024px) {
-    .blog-content {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
 
-    .blog-text {
-        padding: 0 1.4rem;
-    }
+@media screen and (min-width: 540px) {
+
 }
 
 @media screen and (min-width: 768px) {
@@ -94,6 +88,13 @@ blog section in the index page
 
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 1024px) {
+    .blog-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 
+    .blog-text {
+        padding: 0 1.4rem;
+    }
 }

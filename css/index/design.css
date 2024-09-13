@@ -101,17 +101,26 @@ design section in the index page
 }
 
 /* Media Queries */
+
+@media screen and (min-width: 540px) {
+
+}
+@media screen and (min-width: 768px) {
+    .design-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .design-item {
+        margin: 0;
+    }
+
+}
+
 @media screen and (min-width: 1024px) {
     .design-content {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 540px) {
-
 }

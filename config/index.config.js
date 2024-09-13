@@ -3,7 +3,7 @@ export const indexPageConfig = {
         meetUs: {
             heading: "Meet Us",
             subHeading: "Here's a little back story that will definitely interest you...",
-            paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatum, corporis praesentium id a, aliquam obcaecati accusamus nam sed aliquid dolore quas magnam inventore ut, exercitationem modi quam eos. Totam."
+            paragraph: "Imaobong Eniang is a passionate and innovative fashion designer with 3 years of experience in the fashion industry specializing in luxury outfits, female corporate attires, casuals, and traditional attire."
         },
         design: {
             heading: "Latest Designs",

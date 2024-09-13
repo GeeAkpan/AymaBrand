@@ -84,7 +84,10 @@ about section in the index page
     padding: 2rem;
     text-align: center;
 }
-
+.about .about-text{
+    text-align: justify;
+    color: #fff;
+}
 /* About Image */
 .about-content img {
     /* flex: 1; */

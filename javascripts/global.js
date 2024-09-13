@@ -40,12 +40,16 @@ function populateCopyright() {
         console.error(error)
     }
 }
+try {
+    menu.onclick = () => {
+        navbar.classList.toggle("active");
+      };
+      window.onscroll = () => {
+        navbar.classList.remove("active");
+      };
+} catch (error) {
+    console.error(error)
+}
 
-menu.onclick = () => {
-    navbar.classList.toggle("active");
-  };
-  window.onscroll = () => {
-    navbar.classList.remove("active");
-  };
 
 populateCopyright()

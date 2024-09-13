@@ -70,6 +70,7 @@ header {
 .navbar-nav {
     padding: 0.8rem 0 0.2rem 0;
     text-align: center;
+    transition: ease-in-out .5s;
 }
 
 .navbar-nav a {
@@ -203,9 +204,11 @@ footer {
     font-size: 2.5rem;
     cursor: pointer;
 }
-#menu-icon:hover{
-    color:var(--exDark)
+
+#menu-icon:hover {
+    color: var(--exDark)
 }
+
 .navbar .container {
     display: flex;
     align-items: center;
@@ -216,13 +219,42 @@ footer {
 @media screen and (min-width: 1024px) {}
 
 @media screen and (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
 
     .navbar-nav {
         display: none;
     }
+
+    .navbar .container .navbar-brand {
+        z-index: 600;
+    }
+
+    .active {
+        display: flex;
+        opacity: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 20dvh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99.7dvw;
+        height: 100dvh;
+        background: color-mix(in srbg, var(--dark) 70%, #00000000);
+        z-index: 500;
+        backdrop-filter: blur(10px);
+        -moz-backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .navbar-nav a {
+        margin: 1rem 0;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
 
     .navbar .container {
         display: flex;
@@ -241,9 +273,11 @@ footer {
         padding-right: 1.2rem;
         padding-left: 1.2rem;
     }
+
     #menu-icon {
         font-size: 2rem;
     }
+
     .banner-title {
         font-size: 5rem;
     }

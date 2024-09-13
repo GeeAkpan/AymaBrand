@@ -1,6 +1,7 @@
 import {
     globalConfig
 } from "../config/global.config.js"
+const navbar = document.querySelector(".navbar-nav")
 let menu = document.querySelector("#menu-icon");
 export function elementPopulator(className, content) {
     const element = document.querySelector(className)
@@ -40,16 +41,29 @@ function populateCopyright() {
         console.error(error)
     }
 }
+async function populateNavigator() {
+    try {
+        const links = await fetchData("/data/nav.json")
+        let navElement = ""
+        for (const link of links) {
+            navElement += `<a href="${link.url}">${link.title}</a>`
+        }
+        navbar.insertAdjacentHTML("afterbegin", navElement)
+    } catch (error) {
+        console.error(error)
+    }
+}
 try {
     menu.onclick = () => {
         navbar.classList.toggle("active");
-      };
-      window.onscroll = () => {
+    };
+    window.onscroll = () => {
         navbar.classList.remove("active");
-      };
+    };
 } catch (error) {
     console.error(error)
 }
 
 
 populateCopyright()
+populateNavigator()

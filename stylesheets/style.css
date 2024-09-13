@@ -206,6 +206,10 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-direction: column;
+    }
+    .navbar .container .navbar-brand img{
+        width: 30dvw;
     }
     
 }
@@ -225,5 +229,14 @@ footer {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .navbar .container .navbar-brand img{
+        width: 30dvw;
     }
 }
